@@ -1,9 +1,12 @@
 import os,shutil
 import hashlib
 import sys
-sys.path.insert(0,"../../lib")
-import base,config
-system_root = os.path.abspath('.')
+if __name__=="__main__":
+	sys.path.insert(0,"../../lib")
+	import base
+else:
+	import lib.base as base
+import config
 
 class DataStore:
 	def __init__(self):
@@ -77,15 +80,10 @@ class DataStore:
 		self.createDirectoryTreeIfNotExists(destPath)
 		os.rename(sourcePath,destPath)
 		return 0
-		#try:
-		#	shutil.move(sourcePath,destPath)
-		#	return 0
-		#except:
-		#	return 1
 
 	def downloadFile(sef,fileO):
 		try:
-			shutil.copy2(fileO.filePath,os.path.join(system_root,fileO.fileName))
+			shutil.copy2(fileO.filePath,os.path.join(".",fileO.fileName))
 			return 0
 		except:
 			return 1

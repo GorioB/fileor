@@ -5,7 +5,8 @@ class File:
 		self.filePath=filePath
 		self.fileHash=fileHash
 		self.fileContent=fileContent
-		self.fileMetadata=fileMetadata
+		if fileMetadata==None:
+			self.fileMetadata={}
 
 	def printContents(self):
 		print "Filename: "+self.fileName

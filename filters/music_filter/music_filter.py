@@ -1,7 +1,7 @@
 import mutagen.easyid3,os
 if __name__=="__main__":
 	import sys
-	sys.path.insert(0,"../lib")
+	sys.path.insert(0,"../../lib")
 	import base
 else:
 	import lib.base as base

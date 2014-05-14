@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import stores.local_store.local_store as dataStore
 import os
-import filters.music_filter as music_filter
+import filters.music_filter.music_filter as music_filter
 
 class Worker:
 	def __init__(self):

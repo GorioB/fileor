@@ -5,9 +5,7 @@ if __name__=="__main__":
 	import base
 else:
 	import lib.base as base
-import re
-def replaceSpecialChar(s):
-	return re.sub(r'[<>:"/\|?*]',' ',s).strip(" ")
+
 class Filter:
 	def __init__(self):
 		self.extensions = ['mp3','flac']
@@ -15,12 +13,12 @@ class Filter:
 
 	def commitChanges(self,dataStore,workingFile):
 		self.cleanDownloads(workingFile)
-		print "[+] music_filter: Commiting changes."
+		print "[+] music_filter: Committing changes."
 		return dataStore.moveFile(workingFile.filePath,os.path.join(dataStore.dst,
 			"music",
 			"mp3",
-			replaceSpecialChar(workingFile.fileMetadata['artist'][0]),
-			replaceSpecialChar(workingFile.fileMetadata['album'][0]),
+			base.replaceSpecialChar(workingFile.fileMetadata['artist'][0]),
+			base.replaceSpecialChar(workingFile.fileMetadata['album'][0]),
 			workingFile.fileName))
 
 

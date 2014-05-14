@@ -5,7 +5,9 @@ if __name__=="__main__":
 	import base
 else:
 	import lib.base as base
-
+import re
+def replaceSpecialChar(s):
+	return re.sub(r'[<>:"/\|?*]',' ',s).strip(" ")
 class Filter:
 	def __init__(self):
 		self.extensions = ['mp3','flac']
@@ -13,13 +15,13 @@ class Filter:
 
 	def commitChanges(self,dataStore,workingFile):
 		self.cleanDownloads(workingFile)
-		#print workingFile.filePath,os.path.join(dataStore.dst,"music","mp3")
+		print "[+] music_filter: Commiting changes."
 		return dataStore.moveFile(workingFile.filePath,os.path.join(dataStore.dst,
 			"music",
 			"mp3",
-			workingFile.fileMetadata['artist'][0],
-			workingFile.fileMetadata['album'][0],
-			workingFile.fileMetadata['title'][0]+".mp3"))
+			replaceSpecialChar(workingFile.fileMetadata['artist'][0]),
+			replaceSpecialChar(workingFile.fileMetadata['album'][0]),
+			workingFile.fileName))
 
 
 	def getFileAndDataStore(self,worker):
@@ -30,6 +32,7 @@ class Filter:
 	def getMP3MetaData(self,fileO):
 		data = mutagen.easyid3.Open(os.path.join(self.downloadsPath,fileO.fileName))
 		fileO.fileMetadata.update(data)
+		print "[+] music_filter: Read Metadata."
 	def cleanDownloads(self,fileO):
 		os.remove(os.path.join(self.downloadsPath,fileO.fileName))
 		return 0
@@ -46,8 +49,8 @@ class Filter:
 				return 1
 
 if __name__=="__main__":
-	d = Filter()
-	p = base.File()
-	p.fileName = "eurydice.mp3"
-	d.getMP3MetaData(p)
-	print p.fileMetadata
+	#d = Filter()
+	#p = base.File()
+	#p.fileName = "eurydice.mp3"
+	#d.getMP3MetaData(p)
+	print "hi"

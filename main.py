@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import stores.local_store.local_store as dataStore
 import os
 import filters.music_filter as music_filter

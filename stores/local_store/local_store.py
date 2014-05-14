@@ -91,10 +91,15 @@ class DataStore:
 			return 0
 		except:
 			return 1
+	def clearSameFileName(self,path):
+		while os.path.exists(path):
+			directory,name = os.path.split(path)
+			path = os.path.join(directory,"New_"+name)
 
+		return path
 	def moveFile(self,sourcePath,destPath):
 		self.createDirectoryTreeIfNotExists(destPath)
-		print sourcePath, destPath
+		destPath = self.clearSameFileName(destPath)
 		os.rename(sourcePath,destPath)
 		print "[+] local_store: File moved."
 		if os.listdir(os.path.dirname(sourcePath))==[]:
@@ -119,8 +124,10 @@ class DataStore:
 		self.createHashIfNotExists()
 		with open(self.hashPath,"r") as f:
 			hashes = pickle.load(f)
-			if fileO.fileHash in hashes.values():
-				return 1
+			for key,value in hashes.items():
+				if fileO.fileHash == value:
+					print "[-] local_store: Hash matches for "+fileO.fileName+":"+fileO.fileHash+" and "+key+":"+value+"."
+					return 1
 		return 0
 
 	def updateHash(self,fileO):

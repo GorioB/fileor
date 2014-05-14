@@ -1,1 +1,2 @@
+ExifRead==1.4.2
 mutagen==1.22

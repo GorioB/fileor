@@ -2,11 +2,11 @@
 import stores.local_store.local_store as dataStore
 import os
 import filters.music_filter.music_filter as music_filter
+import filters.jpg_filter.jpg_filter as jpg_filter
 
 class Worker:
 	def __init__(self):
-		self.filters = []
-		self.filters.append(music_filter.Filter())
+		self.filters = [music_filter.Filter(),jpg_filter.Filter()]
 		self.dataStore = dataStore.DataStore()
 		self.currentFile = self.dataStore.obtainFile()
 

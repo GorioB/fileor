@@ -1,5 +1,4 @@
 Known issues:
-	local_store: same filename
 	local_store: Can't handle unicode characters
 	Faulty deduplication. Might be something to do with md5 hash?
 	Tried to delete root directory. Should never do that.

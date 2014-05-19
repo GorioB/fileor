@@ -1,0 +1,93 @@
+[+] local_store: Created dest folder.
+[*] local_store: Downloads folder already present.
+[+] local_store: Obtained 01. Pale Saints - Way The World Is.mp3.
+[+] local_store: Downloaded File D:\testdir\01. Pale Saints - Way The World Is.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[*] local_store: Directory D:\testdir\dst\music\mp3\Pale Saints\The Comforts of Madness created.
+[+] local_store: File moved.
+[+] local_store: Obtained 02. Pale Saints - You Tear The World In Two.mp3.
+[+] local_store: Downloaded File D:\testdir\02. Pale Saints - You Tear The World In Two.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 03. Pale Saints - Sea of Sound.mp3.
+[+] local_store: Downloaded File D:\testdir\03. Pale Saints - Sea of Sound.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 04. Pale Saints - True Coming Dream.mp3.
+[+] local_store: Downloaded File D:\testdir\04. Pale Saints - True Coming Dream.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 05. Pale Saints - Little Hammer.mp3.
+[+] local_store: Downloaded File D:\testdir\05. Pale Saints - Little Hammer.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 06. Pale Saints - Insubstantial.mp3.
+[+] local_store: Downloaded File D:\testdir\06. Pale Saints - Insubstantial.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 07. Pale Saints - A Deep Sleep for Steven.mp3.
+[+] local_store: Downloaded File D:\testdir\07. Pale Saints - A Deep Sleep for Steven.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 08. Pale Saints - Language of Flowers.mp3.
+[+] local_store: Downloaded File D:\testdir\08. Pale Saints - Language of Flowers.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 09. Pale Saints - Fell from the Sun.mp3.
+[+] local_store: Downloaded File D:\testdir\09. Pale Saints - Fell from the Sun.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 10. Pale Saints - Sight of You.mp3.
+[+] local_store: Downloaded File D:\testdir\10. Pale Saints - Sight of You.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 11. Pale Saints - Time Thief.mp3.
+[+] local_store: Downloaded File D:\testdir\11. Pale Saints - Time Thief.mp3 to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] music_filter: Read Metadata.
+[+] music_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained 2013-01-13 16.26.28.jpg.
+[+] local_store: Downloaded File D:\testdir\2013-01-13 16.26.28.jpg to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] jpg_filter: Extracted EXIF data from image.
+[+] jpg_filter: Year and Month extracted.
+[+] jpg_filter: Committing changes.
+[*] local_store: Directory D:\testdir\dst\photos\2013\01 created.
+[+] local_store: File moved.
+[+] local_store: Obtained 2013-08-26 21.48.47.jpg.
+[+] local_store: Downloaded File D:\testdir\2013-08-26 21.48.47.jpg to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] jpg_filter: Extracted EXIF data from image.
+[+] jpg_filter: Year and Month extracted.
+[+] jpg_filter: Committing changes.
+[*] local_store: Directory D:\testdir\dst\photos\2013\08 created.
+[+] local_store: File moved.
+[+] local_store: Obtained 2014-01-26 22.46.36.jpg.
+[+] local_store: Downloaded File D:\testdir\2014-01-26 22.46.36.jpg to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] jpg_filter: Extracted EXIF data from image.
+[+] jpg_filter: Year and Month extracted.
+[+] jpg_filter: Committing changes.
+[*] local_store: Directory D:\testdir\dst\photos\2014\01 created.
+[+] local_store: File moved.
+[+] local_store: Obtained 2014-01-26 22.46.46.jpg.
+[+] local_store: Downloaded File D:\testdir\2014-01-26 22.46.46.jpg to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] jpg_filter: Extracted EXIF data from image.
+[+] jpg_filter: Year and Month extracted.
+[+] jpg_filter: Committing changes.
+[+] local_store: File moved.
+[+] local_store: Obtained folder.jpg.
+[+] local_store: Downloaded File D:\testdir\folder.jpg to D:\devel\code\cascadeo-fileorganizer\downloads.
+[+] jpg_filter: Extracted EXIF data from image.
+[-] jpg_filter: No date information found.
+[+] jpg_filter: Committing changes.
+[*] local_store: Directory D:\testdir\dst\photos\unsorted created.
+[+] local_store: File moved.
+[-] local_store: Source directory is empty.

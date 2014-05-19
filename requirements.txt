@@ -1,2 +1,7 @@
 ExifRead==1.4.2
+babelfish==0.5.1
+guessit==0.7.1
 mutagen==1.22
+requests==2.2.1
+stevedore==0.15
+tmdbsimple==0.3.0

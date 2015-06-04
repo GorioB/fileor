@@ -2,3 +2,4 @@
 venv
 temp
 *.tar.gz
+log.txt
